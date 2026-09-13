@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}About{% endblock %}
+{% block content %}
+<section class="panel">
+  <h1>About This Project</h1>
+  <p>
+    This is a BE Cyber Security mini-project demonstrating how authenticated
+    encryption (AES-256-GCM) can be combined with LSB image steganography,
+    and how the resulting stego images can be evaluated for image-quality
+    impact and statistical detectability.
+  </p>
+  <p>
+    <strong>Important:</strong> Neither AES-256 nor LSB steganography is
+    claimed here to be unbreakable or perfectly undetectable. The
+    detectability score produced by this tool is an experimental indicator
+    derived from the implemented statistical/ML tests, not a universal
+    probability that any real attacker will detect hidden data.
+  </p>
+</section>
+{% endblock %}
