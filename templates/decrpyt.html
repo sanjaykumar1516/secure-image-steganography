@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Extract & Decrypt{% endblock %}
+{% block content %}
+<section class="panel">
+  <h1>Extract &amp; Decrypt</h1>
+  <p class="note">Step 1 placeholder — extraction and AES-GCM authentication
+  wiring arrives in Steps 4 &amp; 5.</p>
+
+  <form id="decrypt-form" class="card-form" enctype="multipart/form-data" method="post">
+    <label>Stego Image (PNG/BMP)
+      <input type="file" name="stego_image" accept=".png,.bmp" required>
+    </label>
+    <label>Password
+      <input type="password" name="password" required>
+    </label>
+    <button type="submit" class="btn btn-primary" disabled>Extract &amp; Decrypt (coming in Step 5)</button>
+  </form>
+
+  <div id="decrypt-results" class="results-box">
+    <h2>Result</h2>
+    <p class="note">Status messages (authentication success/failure, decrypted
+    message) will appear here.</p>
+  </div>
+</section>
+{% endblock %}
