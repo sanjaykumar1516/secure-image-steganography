@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Encrypt & Hide{% endblock %}
+{% block content %}
+<section class="panel">
+  <h1>Encrypt &amp; Hide</h1>
+  <p class="note">Step 1 placeholder — upload form, capacity meter, and live status
+  will be wired up in Steps 5 &amp; 6 once encryption (Step 2) and LSB embedding
+  (Step 3) exist.</p>
+
+  <form id="encrypt-form" class="card-form" enctype="multipart/form-data" method="post">
+    <label>Cover Image (PNG/BMP)
+      <input type="file" name="cover_image" accept=".png,.bmp" required>
+    </label>
+    <label>Secret Message
+      <textarea name="message" rows="5" required></textarea>
+    </label>
+    <label>Password
+      <input type="password" name="password" required>
+    </label>
+    <label>Embedding Mode
+      <select name="embed_mode">
+        <option value="sequential">Sequential LSB</option>
+        <option value="randomized">Randomized LSB</option>
+      </select>
+    </label>
+    <button type="submit" class="btn btn-primary" disabled>Encrypt &amp; Hide (coming in Step 5)</button>
+  </form>
+
+  <div id="capacity-panel" class="results-box">
+    <h2>Payload Capacity</h2>
+    <p class="note">Will populate once image analysis is implemented.</p>
+  </div>
+</section>
+{% endblock %}
