@@ -1,0 +1,7 @@
+Flask==3.0.3
+Pillow==10.4.0
+pycryptodome==3.20.0
+numpy==1.26.4
+matplotlib==3.9.0
+scikit-learn==1.5.1
+Werkzeug==3.0.3
